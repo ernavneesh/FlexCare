@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlexCare Physio Appointment History</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #007bff;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .logo-main {
+      text-align: center;
+    }
+
+    .logo-main img {
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+    }
+
+    .flexcare-title {
+      color: #3498db; /* Update the color to match the logo color */
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .appointment-history {
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      background-color: #f5f5f5;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .patient-info-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .logo {
+      margin-right: 10px;
+      height: 20px;
+      width: 30px;
+      vertical-align: middle;
+      border-radius: 50%;
+    }
+
+    .patient-name {
+      font-weight: bold;
+      margin-right: 10px;
+      color: #333;
+    }
+
+    .services {
+      color: #666;
+      margin-bottom: 5px;
+    }
+
+    .appointment-details {
+      color: #666;
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .status-button {
+      cursor: pointer;
+      background-color: #28a745;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin-top: 10px;
+      align-self: flex-end;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo-main">
+      <img src="C:/Users/ASUS/Downloads/logo.jpg" alt="company logo">
+    </div>
+    <h1 class="flexcare-title">FlexCare Physio Appointment History</h1>
+
+    <!-- Entry 1 -->
+    <div class="appointment-history">
+      <div class="patient-info-container">
+        <img class="logo" src="C:/Users/ASUS/Downloads/logo.jpg" alt="company logo">
+        <div class="patient-name">John Doe</div>
+      </div>
+      <div class="services"><span class="therapy-symbol">🏥</span> Physiotherapy for Back Pain</div>
+      <div class="appointment-details">
+        <div><span class="calendar-symbol">📅</span> January 15, 2023</div>
+        <div><span class="location-symbol">🌍</span> Wellness Clinic, Ahmedabad</div>
+        <button class="status-button" data-toggle="popover" data-trigger="focus" title="Patient Details" data-content="Patient Name: John Doe\nAge: 35\nContact: 123-456-7890\nEmail: john.doe@example.com">Completed</button>
+      </div>
+    </div>
+
+    <!-- Entry 2 -->
+    <div class="appointment-history">
+      <div class="patient-info-container">
+        <img class="logo" src="C:/Users/ASUS/Downloads/logo.jpg" alt="company logo">
+        <div class="patient-name">Jane Smith</div>
+      </div>
+      <div class="services"><span class="therapy-symbol">🏥</span> Knee Rehabilitation</div>
+      <div class="appointment-details">
+        <div><span class="calendar-symbol">📅</span> February 5, 2023</div>
+        <div><span class="location-symbol">🌍</span> Sports Rehab Center, New York</div>
+        <button class="status-button" data-toggle="popover" data-trigger="focus" title="Patient Details" data-content="Patient Name: Jane Smith\nAge: 45\nContact: 987-654-3210\nEmail: jane.smith@example.com">Booked</button>
+      </div>
+    </div>
+
+    <!-- Entry 3 -->
+    <div class="appointment-history">
+      <div class="patient-info-container">
+        <img class="logo" src="C:/Users/ASUS/Downloads/logo.jpg" alt="company logo">
+        <div class="patient-name">Mike Johnson</div>
+      </div>
+      <div class="services"><span class="therapy-symbol">🏥</span> Shoulder Pain Relief</div>
+      <div class="appointment-details">
+        <div><span class="calendar-symbol">📅</span> March 10, 2023</div>
+        <div><span class="location-symbol">🌍</span> Health & Wellness Center, London</div>
+        <button class="status-button" data-toggle="popover" data-trigger="focus" title="Patient Details" data-content="Patient Name: Mike Johnson\nAge: 40\nContact: 567-890-1234\nEmail: mike.johnson@example.com">Cancelled</button>
+      </div>
+    </div>
+
+    <!-- Entry 4 -->
+    <div class="appointment-history">
+      <div class="patient-info-container">
+        <img class="logo" src="C:/Users/ASUS/Downloads/logo.jpg" alt="company logo">
+        <div class="patient-name">Sarah Williams</div>
+      </div>
+      <div class="services"><span class="therapy-symbol">🏥</span> Posture Improvement</div>
+      <div class="appointment-details">
+        <div><span class="calendar-symbol">📅</span> April 20, 2023</div>
+        <div><span class="location-symbol">🌍</span> Posture Health Clinic, Sydney</div>
+        <button class="status-button" data-toggle="popover" data-trigger="focus" title="Patient Details" data-content="Patient Name: Sarah Williams\nAge: 30\nContact: 678-901-2345\nEmail: sarah.williams@example.com">Completed</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    $(document).ready(function(){
+      $('[data-toggle="popover"]').popover({
+        html: true,
+        sanitize: false
+      });
+    });
+  </script>
+</body>
+</html>
